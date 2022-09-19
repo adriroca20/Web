@@ -7,7 +7,7 @@ function TodoItem({todo, toggleTodo}) {
     }
     return (
         <li>
-            <input type="checkbox" onChange={handleTodoClick}/>
+            <input type="checkbox" checked={completed} onChange={handleTodoClick}/>
             {task}
         </li>
     )
