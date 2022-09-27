@@ -3,7 +3,7 @@ import "./index.scss"
 import LogoS from "../../assets/images/logo-s.png"
 import LogoSubtitle from "../../assets/images/logo_sub.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHome } from "@fortawesome/free-solid-svg-icons"
+import { faHome, faUser,faLink } from "@fortawesome/free-solid-svg-icons"
 
 
 const Sidebar =()=>(
@@ -17,12 +17,29 @@ const Sidebar =()=>(
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e"></FontAwesomeIcon>
             </NavLink>
             <NavLink exact="true" activeclassname="active" to="/">
-                <FontAwesomeIcon icon={faUSer} color="#4d4d4e"></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faUser} color="#4d4d4e"></FontAwesomeIcon>
             </NavLink>
             <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e"></FontAwesomeIcon>
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target="_blank" rel="noreferrer" href="#">
+                    <FontAwesomeIcon icon={faLink} color="#4d4d4e"/>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href="#">
+                    <FontAwesomeIcon icon={faLink} color="#4d4d4e"/>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href="#">
+                    <FontAwesomeIcon icon={faLink} color="#4d4d4e"/>
+                </a>
+            </li>
+        </ul>
     </div>
 )
 
