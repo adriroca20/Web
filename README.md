@@ -1,2 +1,2 @@
 # Web
-proyectos de la uni
+Proyectos web sin ternimar
