@@ -10,7 +10,24 @@
 }
 
 .cubespinner{
-    animation-name: spincube;
+    animation:spincube 12s infinite ease-in-out;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+
+    div{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background: rgba(255, 255,255,0.4);
+        text-align: center;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+    }
 }
 
 @keyframes spincube {
@@ -25,6 +42,12 @@
         transform: rotateY(-90deg) rotateZ(90deg);
     }
     50%{
-        transform: rotateY(-90deg) rotateZ(90deg);
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66%{
+        transform: rotateY(-270deg) rotateZ(270deg)
+    }
+    83%{
+        transform: rotateX(90deg)
     }
 }
