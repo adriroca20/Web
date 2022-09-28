@@ -1,7 +1,7 @@
 .home-page{
     .text-zone{
         position: absolute;
-        left: 10%;
+        left: 20%;
         top: 50%;
         transform: translateY(-50%);
         width: 40%;
@@ -70,6 +70,9 @@
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
+        font-weight: bold;
+        background-color: rgba(255,255,255,1);
+        transition: all 0.4s ease;
 
         &:hover{
             background-color: #ffd700;
