@@ -5,6 +5,7 @@ import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect } from "react";
 import Logo from "./Logo";
+import Loader from "react-loaders";
 
 const Home = () => {
 
@@ -21,6 +22,8 @@ const Home = () => {
     
 
     return (
+        <>
+            <Loader type="pacman"></Loader>
             <div className="container home-page">
                 <div className="text-zone">
                     <h1>
@@ -47,6 +50,7 @@ const Home = () => {
                 </div>
                 <Logo></Logo>
             </div>
+        </>
     )       
 };
 
