@@ -1,19 +1,15 @@
-function TaskList(props) {
+import TaskCard from "./TaskCard";
 
-    if(props.tasks.length ==0){
+function TaskList({tasks, deleteTask}) {
+  if(tasks.length ==0){
         return <h1>No hay tareas aun</h1>
     }
-    console.log(props);
   return (
     <>
-    {props.tasks.map((tarea)=>{
-        
+    {tasks.map((tarea)=>{
         return (
-        <div key={tarea.id}>
-            <h1>{tarea.title}</h1>
-            <p>{tarea.description}</p>
-        </div>
-)
+          <TaskCard tarea={tarea} deleteTask={deleteTask}></TaskCard>
+      )
     })}
     </>
   )
