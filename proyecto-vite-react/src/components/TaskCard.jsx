@@ -5,7 +5,7 @@ function TaskCard({tarea, deleteTask}){
         deleteTask(tarea.id);
     };
     return (        
-        <div key={tarea.id} style={{background:"lightblue"}}>
+        <div style={{background:"lightblue"}}>
         <h1>{tarea.title}</h1>
         <p>{tarea.description}</p>
         <button onClick={handleDeleteTask}>Eliminar tarea</button>

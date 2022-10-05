@@ -24,7 +24,6 @@ function App() {
   }
 
   function deleteTask(index){
-    console.log(index);
     setTasks(tasks.filter(n=>n.id != index));
   }
 

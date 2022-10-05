@@ -8,7 +8,7 @@ function TaskList({tasks, deleteTask}) {
     <>
     {tasks.map((tarea)=>{
         return (
-          <TaskCard tarea={tarea} deleteTask={deleteTask}></TaskCard>
+          <TaskCard key={tarea.id} tarea={tarea} deleteTask={deleteTask}></TaskCard>
       )
     })}
     </>
