@@ -5,7 +5,7 @@ import { tareas } from './tareas'
 
 
 function App() {
-  const [tasks, setTasks] = useState(0)
+  const [tasks, setTasks] = useState([])
   
   useEffect(() => {
       setTasks(tareas);
@@ -13,16 +13,21 @@ function App() {
 
   //A la funcion le pasas una tarea y la añade al
   //array
-  function createTask(task){
+  function createTask(taskTitle){
     //Si tasks es [1,2,3] y task es 4, esto devuelve
     //[1,2,3,4]
-    setTasks([...tasks,task]);
+    setTasks([...tasks,{
+      title: taskTitle,
+      id:tasks.length,
+      description: "Nueva tarea creada"
+    }]);
+
   }
 
   return (
     <div>
-    <TaskList tasks={tareas}></TaskList>
     <TaskForm createTask={createTask}></TaskForm>
+    <TaskList tasks={tasks}></TaskList>
     </div>
   )
 }

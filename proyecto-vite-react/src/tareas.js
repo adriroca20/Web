@@ -2,7 +2,7 @@
 export const tareas = [
     {
         "id" : 0,
-        "title" : "Mi segunda tarea",
+        "title" : "Mi primera tarea",
         "description": "Mi primera tarea"
     },
     {
@@ -12,7 +12,7 @@ export const tareas = [
     },
     {
         "id" : 2,
-        "title" : "Mi segunda tarea",
+        "title" : "Mi tercera tarea",
         "description": "Mi primera tarea"
     }
 ];
