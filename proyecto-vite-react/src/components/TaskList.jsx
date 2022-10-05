@@ -1,24 +1,11 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { tareas } from '../tareas';
+function TaskList(props) {
 
-function TaskList() {
-
-    const [task,setTasks] = useState([]);
-    
-    //[{hola:"buenas"},{hola:"Adios"}]
-
-    useEffect(() => {
-        setTasks(tareas);
-    }, [])
-
-    if(task.length == 0){
+    if(props.tasks.length ==0){
         return <h1>No hay tareas aun</h1>
     }
-
   return (
     <>
-    {task.map((tarea)=>{
+    {props.tasks.map((tarea)=>{
         return (
         <div key={tarea.id}>
             <h1>{tarea.title}</h1>
