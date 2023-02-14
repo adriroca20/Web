@@ -1,0 +1,7 @@
+.contenedor-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100px;
+    width: 60vw;
+}

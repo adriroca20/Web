@@ -1,0 +1,7 @@
+.boton-agregar{
+    padding: 10px;
+    background-color: none;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
