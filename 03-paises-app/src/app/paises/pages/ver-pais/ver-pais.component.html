@@ -1,1 +1,58 @@
-<p>ver-pais works!</p>
+<div *ngIf="!pais else divPais" class="alert alert-info">
+    Cargando...
+</div>
+
+<ng-template #divPais>
+    <div class="row">
+        <div class="col">
+            <h1>{{pais.name.common}}</h1> 
+        </div>
+    </div>
+    <div class="row justify-content-between pt-4">
+        <div class="col-4">
+            <h1>Bandera</h1> 
+        </div>
+        <div class="col-4">
+            <h1>Informacion</h1> 
+        </div>
+        <hr>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4 align-content-center">
+            <img [src]="pais.flags.png" class="h-100 w-100" alt="">
+        </div>
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <b>Población</b>
+                    {{pais.population | number}}
+                </li>
+                <li class="list-group-item">
+                    <b>Capital</b>
+                    {{pais.capital[0]}}
+                </li>
+                <li class="list-group-item">
+                    <b>Región</b>
+                    {{pais.region}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row justify-content-between pt-4">
+        <div class="col-4">
+            <h1>Traducciones</h1> 
+        </div>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="list-group d-flex">
+                <li *ngFor="let idioma of traducciones" class="list-group-item">
+                    <b>{{idioma}} </b> 
+                    {{pais.translations[idioma].common}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</ng-template>
+
