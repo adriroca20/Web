@@ -1,0 +1,13 @@
+.fila-gifs{
+    height: 300px;
+}
+.card{
+    height: 400px;
+}
+.card-body{
+    overflow: hidden;
+}
+.card-img{
+    height: 100%;
+    object-fit: cover;
+}
