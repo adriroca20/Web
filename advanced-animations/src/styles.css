@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    margin: 10px;
+    font-family: var(--font-family);
+    background-color: var(--surface-b);
+    min-height: 100vh;
+}
+.text-layout{
+    color: var(--text-color);
+}
+.ng-star-inserted{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.word{
+    display: inline-block;
+    margin: 0.3vmin;
+    position: relative;
+    transform: translateY(40%);
+    transition: none;
+    opacity: 0;
+}
+.twitch-card:hover .word{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

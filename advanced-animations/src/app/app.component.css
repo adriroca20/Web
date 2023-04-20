@@ -1,0 +1,10 @@
+.outlet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}

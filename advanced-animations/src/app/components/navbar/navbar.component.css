@@ -1,0 +1,9 @@
+
+:host ::ng-deep .p-card {
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+}

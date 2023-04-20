@@ -1,0 +1,36 @@
+.menu-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 10%;
+}
+.link{
+    text-decoration: none;
+    color: var(--primary-50) ;
+    font-size:clamp(2em,8vw,7em);
+    border-top: 1px solid white;
+    width: 100%;
+    position: relative;
+}
+.link:nth-child(3){
+    border-bottom: 1px solid white;
+}
+
+.link::before{
+    background: linear-gradient(to right,transparent,var(--cyan-600) var(--color-percent));
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+}
+.link:hover::before{
+    width: 100%;
+}

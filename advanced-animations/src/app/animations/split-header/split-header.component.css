@@ -1,0 +1,32 @@
+
+.side{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display:grid;
+    place-items: center;
+    overflow: hidden;
+}
+.title{
+    font-size: 4rem;
+    width: 70vw;
+    margin: 0 15vw;
+}
+#left-side{
+    z-index: 2;
+    background-color: var(--indigo-400);
+}
+#right-side {
+    color: black;
+    background-color: var(--orange-400);
+}
+#left-side .fancy{
+    font-size: 6rem;
+    color: var(--orange-400);
+    font-family: "Lobster",cursive;
+}
+#right-side .fancy{
+    font-size: 6rem;
+    font-family: "Lobster",cursive;
+    color: var(--blue-50);
+}

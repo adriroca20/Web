@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.twitch-card{
+    aspect-ratio: 1 / 1.6;
+    border: 1px solid var(--purple-500);
+    cursor: pointer;
+    position: relative;
+    width: 350px;
+    overflow: hidden;
+
+}
+.title{
+    font-weight: 400;
+    font-size: 4vmin;
+    position: relative;
+    z-index: 2;
+}
+.subtitle{
+    margin-top: 2vmin;
+    font-size: 2vmin;
+}
+.twitch-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(130deg,
+        transparent 0% 33%, 
+        rgba(128, 0, 128, 0.313) 66%,
+        rgba(0, 0, 255, 0.306) 83.5%, 
+        rgba(255, 192, 203, 0.3) 100%) ;
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    transition: all 0.5s ease-in-out;
+}
+.twitch-card:hover::before{
+    background-position: 100% 100%;
+    transform: scale(1.08,1.03);
+}
+.card-content{
+    background: radial-gradient(#FFF2 8%, transparent 8%);
+    background-position: 0% 0%;
+    background-size: 3vmin 3vmin;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    padding: 30px;
+}
+.twitch-card:hover .card-content{
+    background-position: -10% 0%;
+}
+.imagen-producto{
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.4s ease-in-out;
+}
+.twitch-card:hover .imagen-producto{
+    opacity: 1;
+    transform: translateY(0%);
+}
