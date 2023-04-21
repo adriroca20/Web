@@ -36,6 +36,10 @@ export class NavbarComponent implements OnInit {
           {
             label: "Full screen menu",
             routerLink: "full-screen-menu",
+          },
+          {
+            label: "Elegant menu",
+            routerLink: "elegant-menu",
           }
         ]
       },

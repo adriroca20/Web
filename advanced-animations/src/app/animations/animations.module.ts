@@ -5,6 +5,7 @@ import { FullScreenMenuComponent } from './full-screen-menu/full-screen-menu.com
 import { SplitHeaderComponent } from './split-header/split-header.component';
 import { TwitchCardComponent } from './twitch-card/twitch-card.component';
 import { TextSparklesComponent } from './text-sparkles/text-sparkles.component';
+import { ElegantMenuComponent } from './elegant-menu/elegant-menu.component';
 
 
 
@@ -14,7 +15,8 @@ import { TextSparklesComponent } from './text-sparkles/text-sparkles.component';
     FullScreenMenuComponent,
     SplitHeaderComponent,
     TwitchCardComponent,
-    TextSparklesComponent
+    TextSparklesComponent,
+    ElegantMenuComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +26,8 @@ import { TextSparklesComponent } from './text-sparkles/text-sparkles.component';
     FullScreenMenuComponent,
     SplitHeaderComponent,
     TwitchCardComponent,
-    TextSparklesComponent
+    TextSparklesComponent,
+    ElegantMenuComponent
   ]
 })
 export class AnimationsModule { }

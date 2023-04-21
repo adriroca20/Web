@@ -6,6 +6,7 @@ import { FullScreenMenuComponent } from './animations/full-screen-menu/full-scre
 import { SplitHeaderComponent } from './animations/split-header/split-header.component';
 import { TwitchCardComponent } from './animations/twitch-card/twitch-card.component';
 import { TextSparklesComponent } from './animations/text-sparkles/text-sparkles.component';
+import { ElegantMenuComponent } from './animations/elegant-menu/elegant-menu.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:"magic-sparkles",
     component:TextSparklesComponent
+  },
+  {
+    path:"elegant-menu",
+    component:ElegantMenuComponent
   },
   {
     path:"**",

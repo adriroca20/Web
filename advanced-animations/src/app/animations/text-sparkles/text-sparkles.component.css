@@ -1,3 +1,7 @@
+.texto-normal{
+    width: 80%;
+    text-align: center;
+}
 .magic{
         background: linear-gradient(to right, var(--indigo-500),var(--purple-700),var(--purple-200),var(--indigo-500));
         background-clip: text;
@@ -5,13 +9,49 @@
         white-space: nowrap;
         background-size: 200%;
         animation: background-pan 4s infinite linear;
+        position: relative;
+        display: inline-block;
 }
 
+.magic .magic-star{
+    --size: clamp(20px, 1.5vw,30px);
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+    animation: scale 1s infinite linear;
+}
+.magic .magic-star svg{
+    display: block;
+    opacity: 0.7;
+    animation: rotation 1s infinite linear;
+}
+.magic .magic-star svg path{
+    fill: var(--purple-200);
+}
 @keyframes background-pan{
     from{
         background-position: 0% center;
     }
     to{
         background-position: -200% center;
+    }
+}
+@keyframes scale{
+    from,to{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
     }
 }
