@@ -49,7 +49,20 @@ export class NavbarComponent implements OnInit {
           {
             label: "Split header",
             routerLink: "split-header",
+          },
+          {
+            label: "Staggered grid",
+            routerLink: "staggered-grid",
           }
+        ]
+      },
+      {
+        label: "Mouse trailers",
+        items: [
+          {
+            label: "Smart mouse",
+            routerLink: "smart-mouse",
+          },
         ]
       },
       {
@@ -61,7 +74,33 @@ export class NavbarComponent implements OnInit {
           }
         ]
       },
-
+      {
+        label: "Buttons effects",
+        items: [
+          {
+            label: "Hover buttons",
+            routerLink: "buttons-hover",
+          }
+        ]
+      },
+      {
+        label: "Loaders",
+        items: [
+          {
+            label: "Wavy loader",
+            routerLink: "wavy-loader",
+          }
+        ]
+      },
+      {
+        label: "Carousels",
+        items: [
+          {
+            label: "Movies gallery",
+            routerLink: "movies-gallery",
+          }
+        ]
+      },
     ];
   }
 }

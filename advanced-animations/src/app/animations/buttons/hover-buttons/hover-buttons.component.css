@@ -1,0 +1,32 @@
+.container-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+#button-1{
+    border: none;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    background-image: linear-gradient(to right, #c94b4b, #4b134f);
+    display: flex;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#button-1 > span{
+    transition: 0.3s;
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 10px;
+}
+#button-1:hover > span{
+    background-color: transparent;
+}
+#button-1:active{
+    transform: scale(0.9);
+}

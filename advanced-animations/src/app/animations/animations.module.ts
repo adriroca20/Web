@@ -1,33 +1,31 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LightHoverComponent } from './light-hover/light-hover.component';
-import { FullScreenMenuComponent } from './full-screen-menu/full-screen-menu.component';
-import { SplitHeaderComponent } from './split-header/split-header.component';
-import { TwitchCardComponent } from './twitch-card/twitch-card.component';
-import { TextSparklesComponent } from './text-sparkles/text-sparkles.component';
-import { ElegantMenuComponent } from './elegant-menu/elegant-menu.component';
+import { ButtonsModule } from './buttons/buttons.module';
+import { CardsModule } from './cards/cards.module';
+import { HeadersModule } from './headers/headers.module';
+import { MenusModule } from './menus/menus.module';
+import { MouseTrailersModule } from './mouse-trailers/mouse-trailers.module';
+import { TextModule } from './text/text.module';
+import { LoadersModule } from './loaders/loaders.module';
 
 
 
 @NgModule({
   declarations: [
-    LightHoverComponent,
-    FullScreenMenuComponent,
-    SplitHeaderComponent,
-    TwitchCardComponent,
-    TextSparklesComponent,
-    ElegantMenuComponent
+
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ButtonsModule,
+    CardsModule,
+    HeadersModule,
+    MenusModule,
+    MouseTrailersModule,
+    TextModule,
+    LoadersModule
   ],
   exports:[
-    LightHoverComponent,
-    FullScreenMenuComponent,
-    SplitHeaderComponent,
-    TwitchCardComponent,
-    TextSparklesComponent,
-    ElegantMenuComponent
+
   ]
 })
 export class AnimationsModule { }

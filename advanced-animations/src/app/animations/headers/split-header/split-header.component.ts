@@ -12,7 +12,7 @@ export class SplitHeaderComponent implements OnInit{
     document.ontouchmove= (e:any)=>this.handleOnMouseMove(e.touches[0],leftSlide);
   }
   handleOnMouseMove(e:any, leftSlide:any){
-    const width = e.clientX/window.innerWidth * 100;
+    const width = e.clientX/window.innerWidth * 100; 
     leftSlide.style.width= `${width}%`
     
   }
