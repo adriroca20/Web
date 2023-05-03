@@ -39,3 +39,58 @@
         opacity: 0;
     }
 }
+
+/* 
+    Loader 2
+ */
+ .card-body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+.loader-2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: spin 2s infinite linear;
+    border-top-color: transparent;
+ }
+
+/* 
+    Loader 3
+ */
+.loader-3{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: spin 2s infinite linear;
+ } 
+ .loader-3::before,
+ .loader-3::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+ }
+ .loader-3::before{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #003973, #e5e5be);
+ }
+ .loader-3::after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    height: 85%;
+    width: 85%;
+ }
+ @keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}

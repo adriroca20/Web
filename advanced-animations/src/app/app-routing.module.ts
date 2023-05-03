@@ -12,6 +12,10 @@ import { SmartMouseComponent } from './animations/mouse-trailers/smart-mouse/sma
 import { HoverButtonsComponent } from './animations/buttons/hover-buttons/hover-buttons.component';
 import { WavyLoaderComponent } from './animations/loaders/wavy-loader/wavy-loader.component';
 import { MoviesGalleryComponent } from './animations/carousels/movies-gallery/movies-gallery.component';
+import { FluidFlexComponent } from './animations/layouts/fluid-flex/fluid-flex.component';
+import { DarkModeTogglerComponent } from './animations/buttons/dark-mode-toggler/dark-mode-toggler.component';
+import { FilterCardComponent } from './animations/carousels/filter-card/filter-card.component';
+import { TextComponent } from './animations/inputs/text/text.component';
 
 const routes: Routes = [
   {
@@ -61,6 +65,22 @@ const routes: Routes = [
   {
     path: "movies-gallery",
     component: MoviesGalleryComponent
+  },
+  {
+    path: "fluid-flex-layout",
+    component: FluidFlexComponent
+  },
+  {
+    path: "dark-mode-toggler",
+    component: DarkModeTogglerComponent
+  },
+  {
+    path: "filter-card",
+    component: FilterCardComponent
+  },
+  {
+    path: "inputs-text",
+    component: TextComponent
   },
   {
     path: "**",

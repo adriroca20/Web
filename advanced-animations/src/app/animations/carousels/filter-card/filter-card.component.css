@@ -1,0 +1,62 @@
+#carousel-films{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card{
+    height: 500px;
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.402);
+    border-radius: inherit;
+}
+.card .card-data{
+    z-index: 1;
+}
+.card:nth-child(1){
+    background: url("../../../../assets/carousels/hulk.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card:nth-child(2){
+    background: url("../../../../assets/carousels/avengers.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.card:nth-child(3){
+    background: url("../../../../assets/carousels/spiderman.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+.card:hover::after{
+    background-color: transparent;
+}
+#carousel-films:hover > .card:not(:hover){
+    transform: scale(0.9);
+    filter: brightness(0.5) saturate(0) contrast(1.2);
+
+}

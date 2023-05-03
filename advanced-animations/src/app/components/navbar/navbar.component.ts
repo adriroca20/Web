@@ -80,6 +80,10 @@ export class NavbarComponent implements OnInit {
           {
             label: "Hover buttons",
             routerLink: "buttons-hover",
+          },
+          {
+            label: "Dark mode toggler",
+            routerLink: "dark-mode-toggler",
           }
         ]
       },
@@ -98,6 +102,28 @@ export class NavbarComponent implements OnInit {
           {
             label: "Movies gallery",
             routerLink: "movies-gallery",
+          },
+          {
+            label: "Filter card",
+            routerLink: "filter-card",
+          }
+        ]
+      },
+      {
+        label: "Layouts",
+        items: [
+          {
+            label: "Fluid flex",
+            routerLink: "fluid-flex-layout",
+          }
+        ]
+      },
+      {
+        label: "Inputs",
+        items: [
+          {
+            label: "Text",
+            routerLink: "inputs-text",
           }
         ]
       },

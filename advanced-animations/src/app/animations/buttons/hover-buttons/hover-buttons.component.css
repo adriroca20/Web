@@ -5,7 +5,36 @@
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
+    gap: 10px;
 }
+
+.card{
+    height: 350px;
+    width: 250px;
+    border: 1px solid white;
+    background: var(--surface-a);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 5px;
+    z-index: 0;
+}
+.header{
+    height: 20%;
+}
+.card-body{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card > hr{
+    width: 100%;
+}
+
 
 #button-1{
     border: none;
@@ -29,4 +58,82 @@
 }
 #button-1:active{
     transform: scale(0.9);
+}
+
+#button-2{
+    background: black;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;  
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+#button-2::before{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #c94b4b, #4b134f);
+    filter: blur(8px);
+    background-size: 800%;
+    border-radius: inherit;
+    animation: waves 4s infinite linear;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+}
+#button-2:active{
+    padding: 17px 35px;
+}
+#button-2:hover::before{
+    opacity: 1;
+}
+
+#button-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.65rem;
+
+    background: transparent;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    padding: 5px;
+    border: none;
+}
+#button-3 > div{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+    border-radius: 5px;
+    
+}
+#button-3:hover>div:nth-child(1){
+    transform: rotate(40deg);
+}
+#button-3:hover>div:nth-child(2){
+    opacity: 0;
+}
+#button-3:hover>div:nth-child(3){
+    transform: rotate(-40deg) ;
+}
+
+@keyframes waves{
+    0%{
+        background-position: left;
+    }
+    50%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
 }
