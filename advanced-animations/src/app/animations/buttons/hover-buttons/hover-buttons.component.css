@@ -126,6 +126,97 @@
     transform: rotate(-40deg) ;
 }
 
+#button-4{
+    background: var(--indigo-400);
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;  
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+#button-4>p{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+}
+#button-4::after{
+    content: "→";
+    color: var(--indigo-400);
+    font-size: 1.5rem;
+    position: absolute;
+    right: 5%;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+#button-4:hover::after{
+    width: 90%;
+}
+#button-4:hover >p{
+    left: 35%;
+}
+
+#button-5{
+    background: var(--indigo-400);
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;  
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+}
+#button-5>p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+}
+#button-5::after{
+    content: "→";
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    right: 5%;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+#button-5:hover::after{
+    opacity: 1;
+    right: 10%;
+}
+#button-5:hover >p{
+    left: 35%;
+}
+
 @keyframes waves{
     0%{
         background-position: left;

@@ -6,4 +6,37 @@
     left: 0;
     top: 0;
     z-index: 200;
+} 
+:host ::ng-deep p-tieredMenu{
+    display: flex;
+}
+:host ::ng-deep .p-menuitem{
+    background-color:#1e1e1e ;
+}
+
+:host ::ng-deep #menu-button{
+    display: none;
+}
+@media screen and (max-width:1100px) {
+    :host ::ng-deep .p-card {
+        height: 90px;
+        width: 100%;
+    }
+    :host ::ng-deep #menu-button{
+        position: fixed;
+        top: 30px;
+        right: 10%;
+        height: 40px;
+        width: 80px;
+        border-radius: 10px;
+        border: none;
+    }
+    :host ::ng-deep #menu-button{
+        display: block;
+    }
+}
+@media screen and (max-width:1100px){
+    :host ::ng-deep #menu-button{
+        right: 5%;
+    }
 }

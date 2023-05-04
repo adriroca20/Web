@@ -1,7 +1,5 @@
 
 <p-card header="Advanced Animations" subheader="CSS & JS">
-    <p-tieredMenu [model]="items" [style]="{width: '100%'}"></p-tieredMenu>
-    <p-footer>
-        your footer template
-    </p-footer>
+    <p-tieredMenu #menu [model]="items" [popup]="show"></p-tieredMenu>
+    <button pButton type="button" (click)="menu.toggle($event)" id="menu-button">Menu</button>
 </p-card>

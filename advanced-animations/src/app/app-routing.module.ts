@@ -16,6 +16,7 @@ import { FluidFlexComponent } from './animations/layouts/fluid-flex/fluid-flex.c
 import { DarkModeTogglerComponent } from './animations/buttons/dark-mode-toggler/dark-mode-toggler.component';
 import { FilterCardComponent } from './animations/carousels/filter-card/filter-card.component';
 import { TextComponent } from './animations/inputs/text/text.component';
+import { ClampComponent } from './animations/layouts/clamp/clamp.component';
 
 const routes: Routes = [
   {
@@ -81,6 +82,10 @@ const routes: Routes = [
   {
     path: "inputs-text",
     component: TextComponent
+  },
+  {
+    path: "clamp-layout",
+    component: ClampComponent
   },
   {
     path: "**",

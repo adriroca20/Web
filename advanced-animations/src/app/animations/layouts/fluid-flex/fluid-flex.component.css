@@ -12,15 +12,15 @@ form{
     gap: 6px;
     padding: 10px;
 }
-.name{
-    flex: 1 0 130px;
+form>*{
     height: 50px;
+}
+.name{
+    flex: 1 1 130px;
 }
 .email{
     flex: 1 0 130px;
-    height: 50px;
 }
 form > button{
-    flex: 1 0 40px;
-    height: 50px;
+    flex: 1 0 50px;
 }

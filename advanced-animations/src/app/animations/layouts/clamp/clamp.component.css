@@ -1,0 +1,31 @@
+.container-colors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+.red{
+    background-color: red;
+    width: clamp(200px, 50%, 600px);
+    font-size:  clamp(1.2rem,8vw,2rem);
+    height: 200px;
+}
+.green{
+    background-color: green;
+    height: 300px;
+    width: 200px;
+}
+.blue{
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+}

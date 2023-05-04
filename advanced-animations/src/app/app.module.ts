@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AnimationsModule } from './animations/animations.module';
 import { LandingComponent } from './pages/landing/landing.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

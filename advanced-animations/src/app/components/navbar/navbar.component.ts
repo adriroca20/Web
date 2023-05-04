@@ -8,7 +8,11 @@ import { MenuItem } from 'primeng/api';
 })
 export class NavbarComponent implements OnInit {
   items: MenuItem[] = [];
+  show:boolean=false;
   ngOnInit() {
+    window.onresize= ()=>{
+      this.show=screen.width<1100
+    }
     this.items = [
       {
         label: 'Home',
@@ -115,6 +119,10 @@ export class NavbarComponent implements OnInit {
           {
             label: "Fluid flex",
             routerLink: "fluid-flex-layout",
+          },
+          {
+            label: "Clamp",
+            routerLink: "clamp-layout",
           }
         ]
       },

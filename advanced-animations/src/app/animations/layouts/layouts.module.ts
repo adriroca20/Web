@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FluidFlexComponent } from './fluid-flex/fluid-flex.component';
+import { ClampComponent } from './clamp/clamp.component';
 
 
 
 @NgModule({
   declarations: [
-    FluidFlexComponent
+    FluidFlexComponent,
+    ClampComponent
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    FluidFlexComponent
+    FluidFlexComponent,
+    ClampComponent
   ]
 })
 export class LayoutsModule { }
